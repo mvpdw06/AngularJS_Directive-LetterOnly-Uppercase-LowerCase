@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div ng-app="demoapp">
+    <div ng-controller="demoCtrl">
+        <h1>AngularJs letter-only , Uppercase, Lowercase Driective Demo</h1>
+        <h2>Letter only</h2>
+        <input type='text' ng-model='letterOnly' letter-only />
+        <h2>Letter only & Uppercase</h2>
+        <input type='text' ng-model='letterOnlyandUppercase' uppercase letter-only />
+        <h2>Letter only & Lowercase</h2>
+        <input type='text' ng-model='letterOnlyandLowercase' lowercase letter-only />
+    </div>
+    </div>
+</body>
+</html>
